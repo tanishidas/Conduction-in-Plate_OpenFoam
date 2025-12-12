@@ -1,0 +1,22 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Thermal diffusivity for Aluminum
+// DT = k/(rho*Cp) where k=237 W/m·K, rho=2700 kg/m³, Cp=900 J/kg·K
+// DT = 237/(2700*900) = 9.75e-5 m²/s
+
+DT              DT [0 2 -1 0 0 0 0] 9.75e-5;
+// ************************************************************************* //
